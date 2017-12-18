@@ -52,6 +52,10 @@
       <HintPath>..\packages\EXM.Sitecore.EDS.Core.3.4.0\lib\Sitecore.EDS.Core.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Sitecore.EmailCampaign.Cm.UI, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\EXM.Sitecore.EmailCampaign.Cm.UI.3.4.0\lib\Sitecore.EmailCampaign.Cm.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Sitecore.ExM.Framework, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\EXM.Sitecore.ExM.Framework.3.4.0\lib\Sitecore.ExM.Framework.dll</HintPath>
       <Private>False</Private>
@@ -67,6 +71,7 @@
     <Reference Include="System" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
   </ItemGroup>
@@ -75,6 +80,9 @@
     <Compile Include="Modules\EmailCampaign\Core\Actions\SendStandardMessageAction.cs" />
     <Compile Include="Modules\EmailCampaign\SendingManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sitecore modules\web\EmailCampaign\ECMClientService.cs">
+      <SubType>Component</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
