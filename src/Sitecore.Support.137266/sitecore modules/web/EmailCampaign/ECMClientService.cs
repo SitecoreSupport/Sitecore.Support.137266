@@ -1,11 +1,13 @@
 ﻿using Sitecore.Modules.EmailCampaign;
 using Sitecore.Modules.EmailCampaign.Recipients;
 using System;
+using System.ComponentModel;
 using System.Web.Services;
 using System.Web.Services.Protocols;
 
 namespace Sitecore.Support.EmailCampaign.Cm.UI.sitecore_modules.Web.EmailCampaign
 {
+    [ToolboxItem(false), WebService(Name = "Sitecore ECM Client Service", Namespace = "http://sitecore.net/modules/EmailCampaign/")]
     public class ECMClientService : Sitecore.EmailCampaign.Cm.UI.sitecore_modules.Web.EmailCampaign.ECMClientService
     {
         [SoapHeader("AuthenticationInformation"), WebMethod(EnableSession = true)]
